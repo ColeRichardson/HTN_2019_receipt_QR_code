@@ -11,7 +11,7 @@ def generate_qr(link, output_filename):
     import qrcode
     from qrcode.image.pure import PymagingImage
     img = qrcode.make(link)
-    img.save(output_filename)
+    img.save(output_filename + ".png")
 
 if __name__ == "__main__":
     if (len(sys.argv) != 3):
